@@ -3,6 +3,9 @@ import path from 'path';
 
 import Users from './collections/Users';
 import Media from "./collections/Media";
+import Project from "./collections/Projects";
+import Tags from "./collections/Tags";
+import People from "./collections/People";
 
 export default buildConfig({
   serverURL: 'http://localhost:3000',
@@ -11,6 +14,9 @@ export default buildConfig({
   },
   collections: [
     Users,
+    Project,
+    Tags,
+    People,
     Media
   ],
   typescript: {
