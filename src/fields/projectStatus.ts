@@ -22,10 +22,7 @@ const projectStatus: Field = {
             label:"released",
             value:"released"
         }
-    ],
-    admin: {
-        position: "sidebar"
-    }
+    ]
 }
 
 export default projectStatus
