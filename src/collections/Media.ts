@@ -1,7 +1,6 @@
 import { CollectionConfig } from 'payload/types';
 import path from "path";
 
-// Example Collection - For reference only, this must be added to payload.config.ts to be used.
 const Media: CollectionConfig = {
   slug: "media",
   upload: {
