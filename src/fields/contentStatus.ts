@@ -19,7 +19,11 @@ const contentStatus: Field = {
             value:"published",
             label:"published"
         }
-    ]
+    ],
+    admin: {
+        position: "sidebar",
+        description: "only posts projects with the status 'published' will be shown online."
+    }
 }
 
 export default contentStatus
