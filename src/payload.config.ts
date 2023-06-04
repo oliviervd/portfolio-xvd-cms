@@ -30,6 +30,17 @@ export default buildConfig({
         }
       })
   ],
+  cors: [
+    'http://localhost:3000',
+    'https://p02--admin--wjrlktvqwrfv.code.run/',
+    'vitals.vercel-insights.com'
+  ],
+  csrf: [
+    'http://localhost:3000',
+    'https://p02--admin--wjrlktvqwrfv.code.run/',
+    'vitals.vercel-insights.com'
+  ],
+
   admin: {
     user: Users.slug,
   },
