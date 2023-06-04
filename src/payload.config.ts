@@ -32,11 +32,11 @@ export default buildConfig({
   ],
   cors: [
     'http://localhost:3000',
-    'https://p02--admin--wjrlktvqwrfv.code.run/admin/',
+    'https://p02--admin--wjrlktvqwrfv.code.run/',
   ],
   csrf: [
     'http://localhost:3000',
-    'https://p02--admin--wjrlktvqwrfv.code.run/admin/',
+    'https://p02--admin--wjrlktvqwrfv.code.run/',
   ],
 
   admin: {
