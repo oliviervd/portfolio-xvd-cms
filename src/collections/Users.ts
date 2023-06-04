@@ -8,6 +8,9 @@ const Users: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create: ()=> true,
+    delete: ()=> false, // todo: add isAdmin function
+    update: () => true
   },
   fields: [
     // Email added by default
