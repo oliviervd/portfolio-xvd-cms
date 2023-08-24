@@ -3,6 +3,9 @@ import path from "path";
 
 const Media: CollectionConfig = {
   slug: "media",
+  admin: {
+    useAsTitle: "caption"
+  },
   upload: {
     staticDir: path.resolve(__dirname, "../../media"),
     staticURL: "/media",

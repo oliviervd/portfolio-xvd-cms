@@ -2,6 +2,9 @@ import {CollectionConfig} from "payload/types";
 
 const People: CollectionConfig = {
     slug: "people",
+    admin: {
+        useAsTitle: "fistrName" + " " + "lastName"
+    },
     fields: [
         {
             name: "firstName",
