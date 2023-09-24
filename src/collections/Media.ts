@@ -4,7 +4,7 @@ import path from "path";
 const Media: CollectionConfig = {
   slug: "media",
   admin: {
-    useAsTitle: "caption"
+    useAsTitle: "title"
   },
   upload: {
     staticDir: path.resolve(__dirname, "../../media"),
@@ -15,6 +15,10 @@ const Media: CollectionConfig = {
     {
       name: 'alt',
       type: 'text',
+    },
+    {
+      name: 'title',
+      type: "text"
     },
     {
       name: 'caption',
