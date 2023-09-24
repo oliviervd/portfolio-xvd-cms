@@ -12,7 +12,7 @@ RUN yarn build
 FROM base as runtime
 
 ENV NODE_ENV=production
-ENV PAYLOAD_CONFIG_PATH=dist/payload.config.js
+ENV PAYLOAD_CONFIG_PATH=dist/payload.config.ts
 
 WORKDIR /home/node/app
 COPY package*.json  ./

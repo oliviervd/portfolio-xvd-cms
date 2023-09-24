@@ -3,6 +3,8 @@ import path from 'path';
 import {cloudStorage} from "@payloadcms/plugin-cloud-storage";
 import {s3Adapter} from "@payloadcms/plugin-cloud-storage/s3";
 
+require('dotenv').config();
+
 import Users from './collections/Users';
 import Media from "./collections/Media";
 import Project from "./collections/Projects";
@@ -15,7 +17,6 @@ export default buildConfig({
       cloudStorage({
         collections: {
           'media': {
-            // connect to S3
             adapter: s3Adapter({
               config: {
                 endpoint: process.env.S3_ENDPOINT,
