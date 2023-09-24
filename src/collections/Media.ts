@@ -17,6 +17,13 @@ const Media: CollectionConfig = {
         height: undefined,
         position: 'centre'
       },
+      ,
+      {
+        name: 'card',
+        width: 768,
+        height: undefined,
+        position: 'centre',
+      },
       {
         name: 'tablet',
         width: 1024,
