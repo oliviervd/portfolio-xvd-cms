@@ -7,9 +7,31 @@ const Media: CollectionConfig = {
     useAsTitle: "title"
   },
   upload: {
-    staticDir: path.resolve(__dirname, "../../media"),
-    staticURL: "/media",
-    //disableLocalStorage: true  todo:add S3.
+    staticURL: '/media',
+    staticDir: 'media',
+    disableLocalStorage: true,
+    imageSizes: [
+      {
+        name: 'mobileThumbnail',
+        width: 360,
+        height: undefined,
+        position: 'centre'
+      },
+      {
+        name: 'tablet',
+        width: 1024,
+        height: undefined,
+        position: 'centre'
+      },
+      {
+        name: 'original',
+        width: undefined,
+        height: undefined,
+      }
+    ]
+  },
+  access: {
+    read: ()=> true,
   },
   fields: [
     {
