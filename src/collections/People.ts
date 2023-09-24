@@ -8,9 +8,10 @@ const People: CollectionConfig = {
     fields: [
         {
             name: "company",
+            defaultValue: "NO_COMPANY",
             label: "company",
             type: "text",
-            required: true,
+            //required: true,
             admin: {
                 description: "company this person works for"
             }
@@ -26,6 +27,14 @@ const People: CollectionConfig = {
             label: "last name",
             type: "text",
             required: false
+        },
+        {
+            name: "website",
+            label: "website",
+            type: "text",
+            admin: {
+                description: "website to refer to when clicked (optional)"
+            }
         }
     ]
 }
