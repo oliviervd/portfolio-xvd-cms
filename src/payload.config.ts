@@ -15,6 +15,7 @@ export default buildConfig({
       cloudStorage({
         collections: {
           'media': {
+            // connect to S3
             adapter: s3Adapter({
               config: {
                 endpoint: process.env.S3_ENDPOINT,
