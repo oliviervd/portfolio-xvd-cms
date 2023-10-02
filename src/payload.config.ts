@@ -1,9 +1,9 @@
 import { buildConfig } from 'payload/config';
 import path from 'path';
+import dotenv from 'dotenv';
+
 import {cloudStorage} from "@payloadcms/plugin-cloud-storage";
 import {s3Adapter} from "@payloadcms/plugin-cloud-storage/s3";
-
-require('dotenv').config();
 
 import Users from './collections/Users';
 import Media from "./collections/Media";
@@ -11,6 +11,9 @@ import Project from "./collections/Projects";
 import Tags from "./collections/Tags";
 import People from "./collections/People";
 
+dotenv.config({
+  path: path.resolve(__dirname, '../.env'),
+});
 export default buildConfig({
   serverURL:  process.env.PAYLOAD_URL,
   plugins: [
