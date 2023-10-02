@@ -15,7 +15,6 @@ dotenv.config({
   path: path.resolve(__dirname, '../.env'),
 });
 export default buildConfig({
-  serverURL:  process.env.PAYLOAD_URL,
   plugins: [
       cloudStorage({
         collections: {
@@ -35,6 +34,8 @@ export default buildConfig({
         }
       })
   ],
+  serverURL:  process.env.PAYLOAD_URL,
+  // CORS
   cors: [
     'http://localhost:3000',
     'https://p02--admin--wjrlktvqwrfv.code.run/',
