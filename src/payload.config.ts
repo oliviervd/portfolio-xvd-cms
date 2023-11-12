@@ -11,9 +11,6 @@ import Project from "./collections/Projects";
 import Tags from "./collections/Tags";
 import People from "./collections/People";
 
-dotenv.config({
-  path: path.resolve(__dirname, '../.env'),
-});
 export default buildConfig({
   plugins: [
       cloudStorage({
